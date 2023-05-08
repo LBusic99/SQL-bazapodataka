@@ -1,0 +1,26 @@
+use master;
+go
+create database UDRUGA;
+go
+use UDRUGA;
+
+create table Udruga(
+	Naziv varchar(50),
+	Postanskibroj char(5),
+	OIB char(11)
+);
+create table Prostor(
+	Duzina char (11),
+	Sirina char (11),
+	Brojsobe char(11),
+);
+create table Sticenik(
+	Vrsta varchar(50),
+	Razlogdolaska varchar(50),
+	Agresivnost bit
+);
+create table Radnik(
+	OIB char(11),
+	Ime varchar(50),
+	Prezime varchar(50),
+);
